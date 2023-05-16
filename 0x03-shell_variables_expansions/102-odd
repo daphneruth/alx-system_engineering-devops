@@ -1,0 +1,2 @@
+#!/bin/bash
+$ cat input.txt | ./print_every_other.sh

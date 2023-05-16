@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Convert WATER and STIR to decimal
+water_dec=$((10#$WATER))
+stir_dec=$((10#$STIR))
+
+# Add the two numbers
+result_dec=$((water_dec + stir_dec))
+
+# Convert the result to base bestchol
+result_bestchol=$(echo "obase=bestchol; $result_dec" | bc)
+
+# Print the result
+echo "The sum of WATER and STIR is: $result_bestchol"
