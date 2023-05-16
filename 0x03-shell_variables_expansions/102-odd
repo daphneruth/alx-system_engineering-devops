@@ -1,2 +1,2 @@
 #!/bin/bash
-$ cat input.txt | ./print_every_other.sh
+cat -n | cut -c6- | grep -vP "[02468]\t" | cut -f2
